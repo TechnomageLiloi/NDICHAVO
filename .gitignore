@@ -1,0 +1,5 @@
+/Source/vendor/
+/Source/composer.lock
+/Phar/Sandbox/
+/Phar/index.php
+/Phar/Paper.phar
