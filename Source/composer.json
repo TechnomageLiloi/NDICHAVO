@@ -1,0 +1,16 @@
+{
+  "name": "technomage-liloi/paper",
+  "license": "BSD-3-Clause",
+  "description": "Scientific Research Institute",
+  "require": {
+    "technomage-liloi/rune-framework": "dev-main",
+    "technomage-liloi/stylo": "dev-main"
+  },
+  "type": "project",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Liloi\\Paper\\": "Engine"
+    }
+  }
+}
