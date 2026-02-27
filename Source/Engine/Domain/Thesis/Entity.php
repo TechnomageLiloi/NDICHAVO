@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Paper\Domain\Thesis;
+namespace Liloi\OCD\Domain\Thesis;
 
 use Liloi\Stylo\Parser;
 use Liloi\Tools\Entity as AbstractEntity;

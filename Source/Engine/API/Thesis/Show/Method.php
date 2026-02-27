@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\Paper\API\Thesis\Show;
+namespace Liloi\OCD\API\Thesis\Show;
 
-use Liloi\Paper\API\Method as SuperMethod;
-use Liloi\Paper\Domain\Thesis\Manager as ThesisManager;
+use Liloi\OCD\API\Method as SuperMethod;
+use Liloi\OCD\Domain\Thesis\Manager as ThesisManager;
 
 class Method extends SuperMethod
 {

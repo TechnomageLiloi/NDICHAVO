@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\Paper\Domain;
+namespace Liloi\OCD\Domain;
 
 use Liloi\Config\Pool;
 use Liloi\Tools\Data\MySql\Adapter;

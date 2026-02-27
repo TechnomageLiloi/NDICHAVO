@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\Paper\Domain\Thesis;
+namespace Liloi\OCD\Domain\Thesis;
 
-use Liloi\Paper\Domain\Manager as DomainManager;
+use Liloi\OCD\Domain\Manager as DomainManager;
 
 class Manager extends DomainManager
 {
