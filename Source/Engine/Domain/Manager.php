@@ -10,7 +10,7 @@ use Liloi\Tools\Manager as AbstractManager;
 class Manager extends AbstractManager
 {
     /**
-     * Configuration data ppol.
+     * Configuration data pool.
      *
      * @var Pool
      */
@@ -35,6 +35,7 @@ class Manager extends AbstractManager
 
     /**
      * Sets configuration data object.
+     *
      * @param Pool $config
      */
     public static function setConfig(Pool $config): void

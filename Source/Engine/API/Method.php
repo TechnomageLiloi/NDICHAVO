@@ -34,8 +34,5 @@ abstract class Method
         self::$config = $config;
     }
 
-    /**
-     * @inheritDoc
-     */
     abstract public function execute(): array;
 }

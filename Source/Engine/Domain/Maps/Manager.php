@@ -4,8 +4,18 @@ namespace Liloi\OCD\Domain\Maps;
 
 use Liloi\OCD\Domain\Manager as DomainManager;
 
+/**
+ * Maps manager.
+ *
+ * @package Liloi\OCD\Domain\Maps
+ */
 class Manager extends DomainManager
 {
+    /**
+     * Gets map entity by current URL.
+     *
+     * @return Entity
+     */
     static public function getMaps(): Entity
     {
         $url = rtrim($_SERVER['REQUEST_URI'], '/');

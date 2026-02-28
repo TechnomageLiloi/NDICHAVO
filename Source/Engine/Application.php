@@ -9,7 +9,7 @@ use Liloi\OCD\Domain\Manager as DomainManager;
 use Rune\Application\General as GeneralApplication;
 
 /**
- * Interstate 60 (I60) application.
+ * OCD application.
  *
  * @package Liloi\I60
  */

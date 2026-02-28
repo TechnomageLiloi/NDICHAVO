@@ -6,6 +6,8 @@ use Liloi\Stylo\Parser;
 use Liloi\Tools\Entity as AbstractEntity;
 
 /**
+ * Maps entity.
+ *
  * @method string getTitle()
  * @method void setTitle(string $value)
  *
@@ -17,6 +19,11 @@ use Liloi\Tools\Entity as AbstractEntity;
  */
 class Entity extends AbstractEntity
 {
+    /**
+     * Parse body files.
+     *
+     * @return string
+     */
     public function parseBody(): string
     {
         $dir = $this->getDirectory();
