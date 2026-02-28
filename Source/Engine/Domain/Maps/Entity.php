@@ -33,7 +33,17 @@ class Entity extends AbstractEntity
 
         foreach ($body as $f)
         {
-            $lines[] = Parser::parseString(file_get_contents($dir . '/' . $f));
+            $full = $dir . '/' . $f;
+            $ext = pathinfo($full, PATHINFO_EXTENSION);
+            $cont = file_get_contents($full);
+
+            if($ext==='md')
+            {
+                $lines[] = Parser::parseString($cont);
+                continue;
+            }
+
+            $lines[] = $cont;
         }
 
         return implode("", $lines);
