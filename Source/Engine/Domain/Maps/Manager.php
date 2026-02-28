@@ -1,22 +1,22 @@
 <?php
 
-namespace Liloi\OCD\Domain\Thesis;
+namespace Liloi\OCD\Domain\Maps;
 
 use Liloi\OCD\Domain\Manager as DomainManager;
 
 class Manager extends DomainManager
 {
-    static public function getThesis(): Entity
+    static public function getMaps(): Entity
     {
         $url = rtrim($_SERVER['REQUEST_URI'], '/');
 
         $root = self::getConfig()->get('root');
         $dir = $root . $url;
-        $filThesis = $dir . '/Map.json';
+        $filMaps = $dir . '/Map.json';
 
-        if(file_exists($filThesis))
+        if(file_exists($filMaps))
         {
-            $data = (array)json_decode(file_get_contents($filThesis));
+            $data = (array)json_decode(file_get_contents($filMaps));
         }
         else
         {

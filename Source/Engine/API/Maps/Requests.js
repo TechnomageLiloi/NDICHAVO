@@ -1,7 +1,7 @@
-Requests.Thesis = {
+Requests.Maps = {
     show: function ()
     {
-        API.request('Thesis.Show', {
+        API.request('Maps.Show', {
             debug: true
         }, function (data) {
             $('#page').html(data.render);

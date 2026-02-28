@@ -16,7 +16,7 @@
         <style><?php echo file_get_contents(__DIR__ . '/API/Style.css'); ?></style>
 
         <script><?php echo file_get_contents(__DIR__ . '/API/Requests.js'); ?></script>
-        <script><?php echo file_get_contents(__DIR__ . '/API/Thesis/Requests.js'); ?></script>
+        <script><?php echo file_get_contents(__DIR__ . '/API/Maps/Requests.js'); ?></script>
 
     </head>
     <body>
@@ -27,7 +27,7 @@
 
         <div id="page" class="stylo">
             <script>
-                Requests.Thesis.show();
+                Requests.Maps.show();
             </script>
         </div>
     </body>
