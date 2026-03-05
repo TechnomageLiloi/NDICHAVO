@@ -22,7 +22,7 @@ class Manager extends DomainManager
 
         $root = self::getConfig()->get('root');
         $dir = $root . $url;
-        $filMaps = $dir . '/Map.json';
+        $filMaps = $dir . '/Index.json';
 
         if(file_exists($filMaps))
         {
@@ -31,6 +31,7 @@ class Manager extends DomainManager
         else
         {
             $data = [
+                'id' => '.',
                 'title' => 'Enter title'
             ];
         }
