@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\OCD\API;
+namespace Liloi\NDICHAVO\API;
 
 /**
  * Abstract API method.

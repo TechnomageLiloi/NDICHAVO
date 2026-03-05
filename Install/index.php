@@ -7,9 +7,9 @@ error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 define('ROOT_URL', '');
 define('ROOT_PATH', __DIR__);
 
-include_once __DIR__ . '/OCD.phar';
+include_once __DIR__ . '/NDICHAVO.phar';
 
-$app = new \Liloi\OCD\Application([
+$app = new \Liloi\NDICHAVO\Application([
     'root' => __DIR__ . '/Sandbox' // Here you must change to real folder
 ]);
 

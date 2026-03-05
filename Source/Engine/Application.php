@@ -1,15 +1,15 @@
 <?php
 
-namespace Liloi\OCD;
+namespace Liloi\NDICHAVO;
 
 use Liloi\Config\Pool;
 use Liloi\Config\Sparkle;
-use Liloi\OCD\API\Method;
-use Liloi\OCD\Domain\Manager as DomainManager;
+use Liloi\NDICHAVO\API\Method;
+use Liloi\NDICHAVO\Domain\Manager as DomainManager;
 use Rune\Application\General as GeneralApplication;
 
 /**
- * OCD application.
+ * NDICHAVO application.
  *
  * @package Liloi\I60
  */
@@ -55,7 +55,7 @@ class Application extends GeneralApplication
             return $this->$name($parameters);
         }
 
-        $classMethod = 'Liloi\\OCD\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
+        $classMethod = 'Liloi\\NDICHAVO\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
 
         if(class_exists($classMethod))
         {

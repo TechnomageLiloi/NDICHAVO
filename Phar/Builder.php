@@ -1,6 +1,6 @@
 <?php
 
-    $pharFile = 'OCD.phar';
+    $pharFile = 'NDICHAVO.phar';
 
     if(file_exists($pharFile))
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\OCD\Domain\Maps;
+namespace Liloi\NDICHAVO\Domain\Maps;
 
 use Liloi\Stylo\Parser;
 use Liloi\Tools\Entity as AbstractEntity;
