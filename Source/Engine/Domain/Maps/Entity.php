@@ -81,8 +81,8 @@ class Entity extends AbstractEntity
     public function getTech(): string
     {
         $data = [
+            'uid' => '.' . str_replace('/', '.', trim($_SERVER['REQUEST_URI'], '/')),
             'id' => $this->getId(),
-            'rid' => '.' . str_replace('/', '.', trim($_SERVER['REQUEST_URI'], '/')),
             'title' => $this->getTitle(),
             'body' => $this->getBody()
         ];
