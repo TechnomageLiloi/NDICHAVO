@@ -48,4 +48,31 @@ class Entity extends AbstractEntity
 
         return implode("", $lines);
     }
+
+    /**
+     * Gets URL seeds.
+     *
+     * @return string
+     */
+    public function getSeeds(): string
+    {
+        $url = rtrim($_SERVER['REQUEST_URI'], '/');
+
+        $seeds = [];
+
+        while (strpos($url, '/') !== false)
+        {
+            $conc = sprintf('<a href="%s">%s</a>', $url, $url);
+
+            array_unshift($seeds, $conc);
+            $parts = explode('/', $url);
+            array_pop($parts);
+
+            $url = implode('/', $parts);
+        }
+
+        array_unshift($seeds, '<a href="/">Root</a>');
+
+        return implode(' &#9658; ', $seeds);
+    }
 }
