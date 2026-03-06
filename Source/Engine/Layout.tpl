@@ -23,6 +23,7 @@
 
         <div id="menu">
             <a class="butn" href="javascript:void(0)" onclick="window.location.reload();">Refresh</a>
+            <a class="butn" href="javascript:void(0)" onclick="Requests.Maps.tech();">Tech</a>
         </div>
 
         <div id="page" class="stylo">

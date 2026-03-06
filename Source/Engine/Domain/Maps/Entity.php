@@ -8,6 +8,8 @@ use Liloi\Tools\Entity as AbstractEntity;
 /**
  * Maps entity.
  *
+ * @method string getId()
+ *
  * @method string getTitle()
  * @method void setTitle(string $value)
  *
@@ -74,5 +76,16 @@ class Entity extends AbstractEntity
         array_unshift($seeds, '<a href="/">Root</a>');
 
         return implode(' &#9658; ', $seeds);
+    }
+
+    public function getTech(): string
+    {
+        $data = [
+            'id' => $this->getId(),
+            'rid' => '.' . str_replace('/', '.', trim($_SERVER['REQUEST_URI'], '/')),
+            'title' => $this->getTitle(),
+            'body' => $this->getBody()
+        ];
+        return json_encode($data, JSON_PRETTY_PRINT);
     }
 }

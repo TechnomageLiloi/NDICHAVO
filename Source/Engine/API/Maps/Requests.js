@@ -20,5 +20,16 @@ Requests.Maps = {
         }, function () {
 
         });
+    },
+
+    tech: function ()
+    {
+        API.request('Maps.Tech', {
+            debug: true
+        }, function (data) {
+            $('#page').html(data.render);
+        }, function () {
+
+        });
     }
 }
