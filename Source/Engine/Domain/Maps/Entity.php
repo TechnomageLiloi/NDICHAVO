@@ -13,6 +13,9 @@ use Liloi\Tools\Entity as AbstractEntity;
  * @method string getTitle()
  * @method void setTitle(string $value)
  *
+ * @method string getLink()
+ * @method void setLink(string $value)
+ *
  * @method string getDirectory()
  * @method void setDirectory(string $value)
  *
@@ -81,11 +84,12 @@ class Entity extends AbstractEntity
     public function getTech(): string
     {
         $data = [
-            'uid' => '.' . str_replace('/', '.', strtoupper(trim($_SERVER['REQUEST_URI'], '/'))),
-            'id' => $this->getId(),
+            'QID' => '.' . str_replace('/', '.', strtoupper(trim($_SERVER['REQUEST_URI'], '/'))),
+            'ID' => $this->getId(),
+            'link' => $this->getLink(),
             'title' => $this->getTitle(),
             'body' => $this->getBody()
         ];
-        return json_encode($data, JSON_PRETTY_PRINT);
+        return json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
 }
