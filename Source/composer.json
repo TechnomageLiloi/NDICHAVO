@@ -1,5 +1,5 @@
 {
-  "name": "technomage-liloi/ndichavo",
+  "name": "technomage-liloi/tardis",
   "license": "BSD-3-Clause",
   "description": "Scientific Research Institute",
   "require": {
@@ -10,7 +10,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Liloi\\NDICHAVO\\": "Engine"
+      "Liloi\\TARDIS\\": "Engine"
     }
   }
 }

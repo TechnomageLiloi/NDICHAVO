@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\NDICHAVO\Domain;
+namespace Liloi\TARDIS\Domain;
 
 use Liloi\Config\Pool;
 use Liloi\Tools\Data\MySql\Adapter;

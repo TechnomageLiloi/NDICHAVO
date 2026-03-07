@@ -7,9 +7,9 @@ error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 define('ROOT_URL', '');
 define('ROOT_PATH', __DIR__);
 
-include_once __DIR__ . '/NDICHAVO.phar';
+include_once __DIR__ . '/TARDIS.phar';
 
-$app = new \Liloi\NDICHAVO\Application([
+$app = new \Liloi\TARDIS\Application([
     'root' => __DIR__ . '/Sandbox' // Here you must change to real folder
 ]);
 

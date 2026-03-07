@@ -1,6 +1,6 @@
 <?php
 
-    $pharFile = 'NDICHAVO.phar';
+    $pharFile = 'TARDIS.phar';
 
     if(file_exists($pharFile))
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\NDICHAVO\API;
+namespace Liloi\TARDIS\API;
 
 /**
  * Abstract API method.
