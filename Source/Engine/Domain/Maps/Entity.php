@@ -81,15 +81,16 @@ class Entity extends AbstractEntity
         return implode(' &#9658; ', $seeds);
     }
 
-    public function getTech(): string
+    public function getTech(): array
     {
-        $data = [
-            'QID' => '.' . str_replace('/', '.', strtoupper(trim($_SERVER['REQUEST_URI'], '/'))),
+        $tech = [
+            'RID' => '.' . str_replace('/', '.', strtoupper(trim($_SERVER['REQUEST_URI'], '/'))),
             'ID' => $this->getId(),
-            'link' => $this->getLink(),
-            'title' => $this->getTitle(),
-            'body' => $this->getBody()
+            'Link' => sprintf('<a href="%s" target="_blank">%s</a>', $this->getLink(), $this->getLink()),
+            'Title' => $this->getTitle(),
+            'Body' => json_encode($this->getBody(), JSON_UNESCAPED_UNICODE)
         ];
-        return json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+
+        return $tech;
     }
 }
