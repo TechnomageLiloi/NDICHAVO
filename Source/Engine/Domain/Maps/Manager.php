@@ -47,4 +47,18 @@ class Manager extends DomainManager
 
         return $entity;
     }
+
+    public static function getDissertation(): array
+    {
+        $dissertation = self::getConfig()->get('dissertation');
+
+        if(!$dissertation)
+        {
+            return [
+                'title' => 'EnterDissertationTitle'
+            ];
+        }
+
+        return $dissertation;
+    }
 }

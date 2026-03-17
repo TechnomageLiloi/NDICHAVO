@@ -83,12 +83,15 @@ class Entity extends AbstractEntity
 
     public function getTech(): array
     {
+        $dissertation = Manager::getDissertation();
+
         $tech = [
-            'RID' => '.' . str_replace('/', '.', strtoupper(trim($_SERVER['REQUEST_URI'], '/'))),
+            'RID' => strtoupper($dissertation['title']) . '.' . str_replace('/', '.', strtoupper(trim($_SERVER['REQUEST_URI'], '/'))),
             'ID' => $this->getId(),
             'Link' => sprintf('<a href="%s" target="_blank">%s</a>', $this->getLink(), $this->getLink()),
             'Title' => $this->getTitle(),
-            'Body' => json_encode($this->getBody(), JSON_UNESCAPED_UNICODE)
+            'Body' => json_encode($this->getBody(), JSON_UNESCAPED_UNICODE),
+            'Dissertation' => json_encode($dissertation, JSON_UNESCAPED_UNICODE),
         ];
 
         return $tech;
