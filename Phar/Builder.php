@@ -1,6 +1,6 @@
 <?php
 
-    $pharFile = 'TARDIS.phar';
+    $pharFile = 'PlaceOfPower.phar';
 
     if(file_exists($pharFile))
     {
