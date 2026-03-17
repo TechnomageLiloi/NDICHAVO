@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS\API;
+namespace Liloi\PlaceOfPower\API;
 
 /**
  * Abstract API method.

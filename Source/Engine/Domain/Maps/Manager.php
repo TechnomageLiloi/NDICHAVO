@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\TARDIS\Domain\Maps;
+namespace Liloi\PlaceOfPower\Domain\Maps;
 
-use Liloi\TARDIS\Domain\Manager as DomainManager;
+use Liloi\PlaceOfPower\Domain\Manager as DomainManager;
 
 /**
  * Maps manager.
  *
- * @package Liloi\TARDIS\Domain\Maps
+ * @package Liloi\PlaceOfPower\Domain\Maps
  */
 class Manager extends DomainManager
 {

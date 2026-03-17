@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TARDIS</title>
+        <title>PlaceOfPower</title>
 
         <script><?php echo file_get_contents(__DIR__ . '/../vendor/technomage-liloi/rune-framework/Frontside/Library/Jquery.min.js'); ?></script>
         <script><?php echo file_get_contents(__DIR__ . '/../vendor/technomage-liloi/rune-framework/Frontside/Library/Underscore.min.js'); ?></script>

@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\TARDIS\API\Maps\Show;
+namespace Liloi\PlaceOfPower\API\Maps\Show;
 
-use Liloi\TARDIS\API\Method as SuperMethod;
-use Liloi\TARDIS\Domain\Maps\Manager as MapsManager;
+use Liloi\PlaceOfPower\API\Method as SuperMethod;
+use Liloi\PlaceOfPower\Domain\Maps\Manager as MapsManager;
 
 /**
  * Maps.Show API method.
